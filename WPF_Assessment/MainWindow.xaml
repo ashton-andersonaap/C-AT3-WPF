@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPF_Assessment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Assessment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="button_removeContractor">
+        <TextBox x:Name="textBox_firstName" HorizontalAlignment="Left" Margin="89,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_lastName" HorizontalAlignment="Left" Margin="89,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datePicker_startDate"  HorizontalAlignment="Left" Margin="89,79,0,0" VerticalAlignment="Top" Height="24" Width="120"/>
+        <TextBox x:Name="textBox_hourlyWage" HorizontalAlignment="Left" Margin="89,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="22,6,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.152"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="27,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.152"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="23,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.152"/>
+        <Label Content="Hourly Wage" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,0.152"/>
+        <Button x:Name="button_addContractor" Content="Add Contractor" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Height="43" Width="120" Click="button_addContractor_Click"/>
+        <ListBox x:Name="listBox_contractors" HorizontalAlignment="Left" Height="392" Margin="548,0,0,0" VerticalAlignment="Center" Width="242" />
+        <Button x:Name="button_showContractors" Content="Show Contractors" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Height="43" Width="120" Click="button_showContractors_Click"/>
+        <Button x:Name="button_removeContractor1" Content="Remove Contractor" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="43" Width="120" Click="button_removeContractors_Click"/>
+        <Label x:Name="label_contractors" Content="Contractors" Margin="548,0,132,402"/>
+        <ListBox x:Name="listbox_jobs" HorizontalAlignment="Center" Height="175" VerticalAlignment="Top" Width="242" Margin="0,238,0,0"  />
+        <Label x:Name="label_jobs" Content="Jobs" Margin="281,217,279,185"/>
+        <Button Content="Show All Jobs" HorizontalAlignment="Left" Margin="154,372,0,0" VerticalAlignment="Top" Height="41" Width="120" Click="Button_Click"/>
+        <TextBox x:Name="textBox_jobTitle" HorizontalAlignment="Left" Margin="340,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+        <Label Content="Job Title" HorizontalAlignment="Left" Margin="281,5,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_jobDate" Content="Date:" HorizontalAlignment="Left" Margin="279,39,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_jobCost" HorizontalAlignment="Left" Margin="340,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="label_jobCost" Content="Cost:" HorizontalAlignment="Left" Margin="281,78,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_completed" Content="Completed:" HorizontalAlignment="Left" Margin="279,113,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_completed" HorizontalAlignment="Left" Margin="400,113,0,0" VerticalAlignment="Top" Width="121">
+            <ComboBoxItem>Yes</ComboBoxItem>
+            <ComboBoxItem>No</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="label_assignedTo" Content="Assigned To:" HorizontalAlignment="Left" Margin="281,157,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_assigning" HorizontalAlignment="Left" Margin="400,159,0,0" VerticalAlignment="Top" Width="121" />
+        <Button x:Name="button_addJob" Content="Add Job" HorizontalAlignment="Left" Margin="401,186,0,0" VerticalAlignment="Top" Width="120" Click="button_addJob_Click"/>
+        <Button x:Name="button_removeJob" Content="Remove Job" HorizontalAlignment="Left" Margin="400,211,0,0" VerticalAlignment="Top" Width="121"/>
+        <DatePicker x:Name="datePicker_jobDate" HorizontalAlignment="Left" Margin="340,38,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button x:Name="button_getJob" Content="Get Jobs" HorizontalAlignment="Left" Margin="281,191,0,0" VerticalAlignment="Top" Click="button_getJob_Click"/>
+        <Button x:Name="button_showAvailablecontractors" Content="Show Available Contractors" HorizontalAlignment="Left" Height="41" Margin="10,292,0,0" VerticalAlignment="Top" Width="120" FontSize="9" Click="button_showAvailablecontractors_Click"/>
+        <Button x:Name="button_showUnassignedjobs" Content="Show Unassigned Jobs" HorizontalAlignment="Left" Margin="154,326,0,0" VerticalAlignment="Top" Height="34" Width="120" FontSize="10" Click="button_showUnassignedjobs_Click"/>
+
+    </Grid>
+</Window>
