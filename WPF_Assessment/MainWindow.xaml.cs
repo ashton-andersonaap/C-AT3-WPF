@@ -161,10 +161,19 @@ namespace WPF_Assessment
         {
             listbox_jobs.Items.Clear();
             List<Job> jobs = system.getJobs();
-
-            foreach (Job job in jobs)
+            if (jobs.Count == 0)
             {
-                listbox_jobs.Items.Add(job);
+                MessageBox.Show("No Jobs To Show");
+            }
+            else
+            {
+
+
+                foreach (Job job in jobs)
+                {
+                    listbox_jobs.Items.Add(job);
+                }
+
             }
         }
 
@@ -225,6 +234,27 @@ namespace WPF_Assessment
             {
                 listbox_jobs.Items.Add(job);
             }
+        }
+
+        private void button_completeJob_Click(object sender, RoutedEventArgs e)
+        {
+
+            Job jobSelected = listbox_jobs.SelectedItem as Job;
+
+            if (jobSelected != null)
+            {
+                system.completeJob(jobSelected);
+
+                listbox_jobs.Items.Remove(jobSelected);
+
+                MessageBox.Show($"{jobSelected.Title} completed and contractor unassigned.");
+
+            }
+            else
+            {
+                MessageBox.Show("Select a job to complete.");
+            }
+                
         }
     }
 }

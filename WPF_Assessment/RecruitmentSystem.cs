@@ -41,19 +41,19 @@ namespace WPF_Assessment
 
 
             return contractors;
-            
+
         }
 
         public Job addJob(string title, DateTime date, float cost, bool completed, Contractor contractorAssigned)
         {
             Job job = new Job(title, date, cost, completed, contractorAssigned);
-            jobs.Add(job);  
+            jobs.Add(job);
             return job;
 
         }
 
         public List<Job> getJobs()
-        { 
+        {
             return jobs;
         }
 
@@ -85,7 +85,7 @@ namespace WPF_Assessment
 
 
 
-          return availableContractors;
+            return availableContractors;
 
 
 
@@ -106,8 +106,17 @@ namespace WPF_Assessment
 
             }
 
-      
+
             return unassignedJobs;
+        }
+
+        public void completeJob(Job jobTocomplete)
+        {
+            if (jobTocomplete != null)
+            {
+                jobTocomplete.Completed = true;
+                jobTocomplete.ContractorAssigned = null;
+            }
         }
     }
 }

@@ -26,7 +26,6 @@ H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\bin\Debug\net8.0
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\MainWindow.g.cs
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\App.g.cs
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\WPF_Assessment_MarkupCompile.cache
-H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\WPF_Assessment_MarkupCompile.lref
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\MainWindow.baml
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\WPF_Assessment.g.resources
 H:\Programming_TAFE\INTRPROGR\AT2\WPF_Assessment\WPF_Assessment\obj\Debug\net8.0-windows\WPF_Assessment.GeneratedMSBuildEditorConfig.editorconfig

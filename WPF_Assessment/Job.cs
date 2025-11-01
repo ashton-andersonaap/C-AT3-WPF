@@ -31,7 +31,7 @@ namespace WPF_Assessment
             Date: {Date}
             Cost: ${Cost}
             Completed: {Completed}
-            Assigned To: {ContractorAssigned}";
+            Assigned To: {ContractorAssigned.FirstName}";
         }
 
     }
