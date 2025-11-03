@@ -7,11 +7,14 @@ using System.Windows.Documents;
 
 namespace WPF_Assessment
 {
+    //Main Methods
     class RecruitmentSystem
     {
+        //Lists
         List<Contractor> contractors = new List<Contractor>();
         List<Job> jobs = new List<Job>();
 
+        //Add Contractor
         public Contractor addContractor(string firstName, string lastName, DateTime startDate, float hourlyWage)
         {
             Contractor contractor = new Contractor(firstName, lastName, startDate, hourlyWage);
@@ -20,6 +23,7 @@ namespace WPF_Assessment
             return contractor;
         }
 
+        //Remove Contractor
         public Contractor removeContractor(string firstName, string lastName)
         {
             foreach (Contractor c in contractors.ToList())
@@ -35,6 +39,8 @@ namespace WPF_Assessment
 
         }
 
+        //Get All Contractors 
+
         public List<Contractor> getContractors()
         {
 
@@ -44,6 +50,7 @@ namespace WPF_Assessment
 
         }
 
+        //Add Job
         public Job addJob(string title, DateTime date, float cost, bool completed, Contractor contractorAssigned)
         {
             Job job = new Job(title, date, cost, completed, contractorAssigned);
@@ -52,11 +59,13 @@ namespace WPF_Assessment
 
         }
 
+        //Get all jobs
         public List<Job> getJobs()
         {
             return jobs;
         }
 
+        //Get Job By Cost
         public List<Job> getJob_byCost(double cost)
         {
             List<Job> jobs = getJobs();
@@ -66,6 +75,7 @@ namespace WPF_Assessment
 
         }
 
+        //List Unassigned Contractors
         public List<Contractor> getAvailablecontractors()
         {
             List<Contractor> contractors = getContractors();
@@ -91,6 +101,7 @@ namespace WPF_Assessment
 
         }
 
+        //Get Unassigned Jobs 
         public List<Job> getUnassignedjobs()
         {
             List<Job> jobs = getJobs();
@@ -110,6 +121,7 @@ namespace WPF_Assessment
             return unassignedJobs;
         }
 
+        //Complete Job (Remove from list and unassign contractor)
         public void completeJob(Job jobTocomplete)
         {
             if (jobTocomplete != null)

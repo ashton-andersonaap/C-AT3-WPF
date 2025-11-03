@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace WPF_Assessment
 {
+    //Custom Class for Jobs
     class Job
     {
+        //Fields
         public string Title;
         public DateTime Date;
         public float Cost;
         public bool Completed;
         public Contractor ContractorAssigned;
 
+
+        //Constructor
         public Job(string title, DateTime date, float cost, bool completed, Contractor contractorAssigned) 
         {
             Title = title;
@@ -24,6 +28,7 @@ namespace WPF_Assessment
 
         }
 
+        //To String
         public override string ToString()
         {
             return @$"

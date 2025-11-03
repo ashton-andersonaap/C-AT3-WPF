@@ -31,12 +31,12 @@
             <TextBox x:Name="textBox_hourlyWage" Width="200" Background="#E6F9E6" Foreground="White"/>
 
             <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                <Button x:Name="button_addContractor" Content="Add Contractor" Width="120" Background="LightBlue" Foreground="White" Click="button_addContractor_Click"/>
-                <Button x:Name="button_showContractors" Content="Show Contractors" Width="120" Margin="5,0,0,0" Background="LightBlue" Foreground="White" Click="button_showContractors_Click"/>
+                <Button x:Name="button_addContractor" Content="Add Contractor" Width="120" Background="DarkGreen" Foreground="White" Click="button_addContractor_Click"/>
+                <Button x:Name="button_showContractors" Content="Show Contractors" Width="120" Margin="5,0,0,0" Background="DarkGreen" Foreground="White" Click="button_showContractors_Click"/>
             </StackPanel>
 
-            <Button x:Name="button_removeContractor1" Content="Remove Contractor" Width="245" Margin="0,5,0,0" Background="LightBlue" Foreground="White" Click="button_removeContractors_Click"/>
-            <Button x:Name="button_showAvailablecontractors" Content="Show Available Contractors" Width="245" Margin="0,5,0,0" Background="LightBlue" Foreground="White" Click="button_showAvailablecontractors_Click"/>
+            <Button x:Name="button_removeContractor1" Content="Remove Contractor" Width="245" Margin="0,5,0,0" Background="DarkGreen" Foreground="White" Click="button_removeContractors_Click"/>
+            <Button x:Name="button_showAvailablecontractors" Content="Show Available Contractors" Width="245" Margin="0,5,0,0" Background="DarkGreen" Foreground="White" Click="button_showAvailablecontractors_Click"/>
 
             <!-- Job Inputs -->
             <Label Content="Job Title" Margin="0,10,0,0" Foreground="White"/>
@@ -58,13 +58,13 @@
             <ComboBox x:Name="comboBox_assigning" Width="200" Background="#E6F9E6" Foreground="White"/>
 
             <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                <Button x:Name="button_addJob" Content="Add Job" Width="120" Background="LightBlue" Foreground="White" Click="button_addJob_Click"/>
-                <Button x:Name="button_getJob" Content="Get Jobs" Width="120" Margin="5,0,0,0" Background="LightBlue" Foreground="White" Click="button_getJob_Click"/>
+                <Button x:Name="button_addJob" Content="Add Job" Width="120" Background="DarkGreen" Foreground="White" Click="button_addJob_Click"/>
+                <Button x:Name="button_getJob" Content="Get Job" Width="120" Margin="5,0,0,0" Background="DarkGreen" Foreground="White" Click="button_getJob_Click"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                <Button x:Name="button_showUnassignedjobs" Content="Show Unassigned Jobs" Width="120" Background="LightBlue" Foreground="White" Click="button_showUnassignedjobs_Click"/>
-                <Button x:Name="button_completeJob" Content="Complete Job" Width="120" Margin="5,0,0,0" Background="LightBlue" Foreground="White" Click="button_completeJob_Click"/>
+                <Button x:Name="button_showUnassignedjobs" Content="Show Unassigned Jobs" Width="120" Background="DarkGreen" Foreground="White" Click="button_showUnassignedjobs_Click"/>
+                <Button x:Name="button_completeJob" Content="Complete Job" Width="120" Margin="5,0,0,0" Background="DarkGreen" Foreground="White" Click="button_completeJob_Click"/>
             </StackPanel>
 
         </StackPanel>
@@ -77,7 +77,7 @@
             <Label Content="Jobs" Margin="0,10,0,5" Foreground="White"/>
             <ListBox x:Name="listbox_jobs" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Background="#E6F9E6" Foreground="White"/>
 
-            <Button Content="Show All Jobs" Width="120" Margin="0,5,0,0" Background="LightBlue" Foreground="White" Click="Button_Click"/>
+            <Button Content="SHOW ALL JOBS" Width="120" Margin="0,5,0,0" Background="LightGreen" Foreground="White" Click="button_showJobs_Click"/>
         </StackPanel>
 
     </Grid>

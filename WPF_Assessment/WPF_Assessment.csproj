@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="images\" />
+    <None Remove="images\background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\background.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

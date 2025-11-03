@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace WPF_Assessment
 {
-
+    //Custom Class for Contractors
 
     class Contractor
     {
+        //Fields
         public string FirstName;
         public string LastName;
         public DateTime StartDate;
         public float HourlyWage;
+
+        //Constructor
         public Contractor(string firstName, string lastName, DateTime startDate, float hourlyWage)
         {
             FirstName = firstName;
@@ -22,6 +25,7 @@ namespace WPF_Assessment
             HourlyWage = hourlyWage;
         }
 
+        //To String
         public override string ToString()
         {
             return $"""

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Programming_TAFE\\INTRPROGR\\AT2\\WPF_Assessment\\WPF_Assessment\\WPF_Assessment.csproj",
+      "projectUniqueName": "C:\\Users\\Ashton\\source\\repos\\WPF_Assessment\\WPF_Assessment\\WPF_Assessment.csproj",
       "projectName": "WPF_Assessment",
-      "projectPath": "H:\\Programming_TAFE\\INTRPROGR\\AT2\\WPF_Assessment\\WPF_Assessment\\WPF_Assessment.csproj",
+      "projectPath": "C:\\Users\\Ashton\\source\\repos\\WPF_Assessment\\WPF_Assessment\\WPF_Assessment.csproj",
       "packagesPath": "C:\\Users\\Ashton\\.nuget\\packages\\",
-      "outputPath": "H:\\Programming_TAFE\\INTRPROGR\\AT2\\WPF_Assessment\\WPF_Assessment\\obj\\",
+      "outputPath": "C:\\Users\\Ashton\\source\\repos\\WPF_Assessment\\WPF_Assessment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -16,6 +16,7 @@ namespace WPF_Assessment
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Recruitment system class instance as system
         RecruitmentSystem system = new RecruitmentSystem();
         public MainWindow()
         {
@@ -27,7 +28,7 @@ namespace WPF_Assessment
 
         
 
-
+        //Add Contractor
         private void button_addContractor_Click(object sender, RoutedEventArgs e)
         {
             string firstName = textBox_firstName.Text;
@@ -74,6 +75,8 @@ namespace WPF_Assessment
 
         }
 
+
+        //Show Contractors
         private void button_showContractors_Click(object sender, RoutedEventArgs e)
         {
             comboBox_assigning.ItemsSource = system.getContractors();
@@ -87,6 +90,7 @@ namespace WPF_Assessment
             }
         }
 
+        //Remove Contractor
         private void button_removeContractors_Click(object sender, RoutedEventArgs e)
         {
             string firstName = textBox_firstName.Text;
@@ -112,6 +116,7 @@ namespace WPF_Assessment
 
         }
 
+        //Add Job
         private void button_addJob_Click(object sender, RoutedEventArgs e)
         {
             string title = textBox_jobTitle.Text;
@@ -157,7 +162,9 @@ namespace WPF_Assessment
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        //Show Jobs
+        private void button_showJobs_Click(object sender, RoutedEventArgs e)
         {
             listbox_jobs.Items.Clear();
             List<Job> jobs = system.getJobs();
@@ -176,6 +183,8 @@ namespace WPF_Assessment
 
             }
         }
+
+        //Get Job (Search based on Cost and Title)
 
         private void button_getJob_Click(object sender, RoutedEventArgs e)
         {
@@ -216,6 +225,7 @@ namespace WPF_Assessment
 
         }
 
+        // Show Available Contractors
         private void button_showAvailablecontractors_Click(object sender, RoutedEventArgs e)
         {
             listBox_contractors.Items.Clear();
@@ -236,6 +246,8 @@ namespace WPF_Assessment
             }
         }
 
+
+        //Complete Selected Job
         private void button_completeJob_Click(object sender, RoutedEventArgs e)
         {
 
